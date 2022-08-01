@@ -70,6 +70,7 @@ vi:
         email: "Email"
         password: "Mật khẩu"
         btn_submit: "Đăng nhập"
+        remember: "Ghi nhớ mật khẩu"
     create:
       login_success: "Chào mừng đến với Sample App"
       login_fail: "Email hoặc mật khẩu đang bị sai"
