@@ -6,7 +6,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t(".signup_success")
+      log_in @user
+      flash.now[:success] = t(".signup_success")
       redirect_to @user
     else
       flash[:danger] = t(".signup_fail")
