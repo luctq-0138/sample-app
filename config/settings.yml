@@ -1,3 +1,5 @@
+true: "1"
+false: "0"
 url:
   rails_home_url: "https://rubyonrails.org/"
   rails_tutorial_url: "https://www.railstutorial.org/"
@@ -8,9 +10,15 @@ url:
   rails_screencasts_url: "https://screencasts.railstutorial.org/"
   learn_enough_url: "https://www.learnenough.com/"
   author_url: "https://www.michaelhartl.com/"
+  gravatar: "https://gravatar.com/emails"
 regex:
   email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 valid:
   name_max_len: 50
   email_max_len: 255
   password_min_len: 6
+gravatar:
+  default_size: 80
+  options_index_size: 20
+pagy:
+  page_size: 20
