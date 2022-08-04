@@ -6,7 +6,11 @@ module SessionsHelper
   def handle_login user
     if user.activated?
       log_in user
-      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+      if params[:session][:remember_me] == Settings.true
+        remember(user)
+      else
+        forget(user)
+      end
       redirect_back_or user
     else
       flash[:warning] = t ".account_not_activated"
